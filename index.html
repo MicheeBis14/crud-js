@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-icons-1.10.5/font/bootstrap-icons.css"> -->
 
 </head>
 
@@ -15,43 +15,47 @@
     <div class="block">
         <h1 id="gros-titre">CRUD AVEC DU JAVASCRIPT</h1>
 
-        <form action="" class="form" autocomplete="off" onsubmit=" onFormSubmit(e)">
+        <form class="form">
+            <div class="item">
 
-            <div class="infos">
-                <div class="data">
-                    <input type="text" id="name-txt">
-                    <label for="name-txt">Name</label>
-                </div>
+                <label for="nameUse">Nom</label><br>
+                <input type="text" id="nameUse" class="nom" placeholder="Your name">
 
-                <div class="data">
-                    <input type="text" id="firstNom">
-                    <label for="firstNom">Prenom</label>
-                </div>
             </div>
 
-            <div class="infos">
-                <div class="data">
-                    <input type="text" id="phoneTxt">
-                    <label for="phoneTxt">Phone</label>
-                </div>
+            <div class="item">
+                
+                <label for="prenomUse">Prenom</label><br>
+                <input type="text" id="prenomUse" class="nom" placeholder="Your Firstname">
 
-                <div class="data">
-                    <input type="text" id="email-txt">
-                    <label for="email-txt">Email</label>
-                </div>
             </div>
 
-            <div class="infos submit">
-                <input type="submit" class="btn-submit" value="Add">
-                <input type="reset" class="btn-submit reset" value="Reset">
-                <!-- <button class="btn-submit" name="submit" type="button">Add</button> -->
-                <!-- <button class="btn-submit reset" name="reset" type="button">Reset</button> -->
+            <div class="item">
+                
+                <label for="emailUse">Email</label><br>
+                <input type="text" id="emailUse" class="nom" placeholder="Your email">
+
             </div>
+
+            <div class="item">
+                
+                <label for="phoneUse">Phone-Number</label><br>
+                <input type="text" id="phoneUse" class="nom" placeholder="Your name">
+
+            </div>
+
+            <div class="item submit ">
+                <input type="submit" id="btn-submit" class="sub" value="Add">
+                <input type="submit" id="btn-reset" class="sub" value="Reset">
+
+            </div>
+        <hr>
 
         </form>
-        <hr>
-        <div class="result">
-            <table id="tableau-result">
+
+        <div class="form result">
+
+            <table id="tableau-result" class="tableau">
                 <thead>
                     <tr class="thead">
                         <th>Name</th>
@@ -62,15 +66,81 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    <tr>
+                        <td>KILOLO</td>
+                        <td>Michee</td>
+                        <td>0817713350</td>
+                        <td>bis@gmail.com</td>
+                        <td>
+                            <button class="action-submit">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+
+                            <button class="action-submit btn-edit">
+                                <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>KILOLO</td>
+                        <td>Michee</td>
+                        <td>0817713350</td>
+                        <td>bis@gmail.com</td>
+                        <td>
+                            <button class="action-submit">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+
+                            <button class="action-submit btn-edit">
+                                <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>KILOLO</td>
+                        <td>Michee</td>
+                        <td>0817713350</td>
+                        <td>bis@gmail.com</td>
+                        <td>
+                            <button class="action-submit">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+
+                            <button class="action-submit btn-edit">
+                                <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+                    </tr>   
+
+                    <tr>
+                        <td>KILOLO</td>
+                        <td>Michee</td>
+                        <td>0817713350</td>
+                        <td>bis@gmail.com</td>
+                        <td>
+                            <button class="action-submit">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+
+                            <button class="action-submit btn-edit">
+                                <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+                    </tr>   
                 </tbody>
+                
+
             </table>
+
+        
         </div>
 
 
     </div>
 
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </body>
 
 </html>

@@ -102,7 +102,7 @@
 
 }
  
-.block .result .tableau-result{
+.block .result #tableau-result{
     /* background-color: red; */
     position: relative;
     top: 50%;
@@ -116,7 +116,7 @@
     /* margin: 0px auto; */
     border: 3px solid rgba(0, 22, 77, 0.632);
 }
-.tableau-result .thead th  {
+#tableau-result .thead th  {
     background-color: rgb(3, 47, 94);
      color: #fff;
      text-align: left;

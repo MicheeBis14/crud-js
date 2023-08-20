@@ -15,7 +15,7 @@
     <div class="block">
         <h1 id="gros-titre">CRUD AVEC DU JAVASCRIPT</h1>
 
-        <form action="" class="form" autocomplete="off" onsubmit=" onFormSubmit()">
+        <form action="" class="form" autocomplete="off" onsubmit=" onFormSubmit(e)">
 
             <div class="infos">
                 <div class="data">
@@ -24,15 +24,15 @@
                 </div>
 
                 <div class="data">
-                    <input type="text" id="first-nom">
-                    <label for="first-nom">Prenom</label>
+                    <input type="text" id="firstNom">
+                    <label for="firstNom">Prenom</label>
                 </div>
             </div>
 
             <div class="infos">
                 <div class="data">
-                    <input type="text" id="phone-txt">
-                    <label for="phone-txt">Phone</label>
+                    <input type="text" id="phoneTxt">
+                    <label for="phoneTxt">Phone</label>
                 </div>
 
                 <div class="data">
@@ -51,7 +51,7 @@
         </form>
         <hr>
         <div class="result">
-            <table class="tableau-result">
+            <table id="tableau-result">
                 <thead>
                     <tr class="thead">
                         <th>Name</th>

@@ -19,8 +19,9 @@
    
 }
 .block > h1{
-    margin: 0px 0px 0px 185px;
-    color: rgb(11, 112, 65);
+    font-size: 1.5rem;
+    margin: 20px 0px 0px 255px;
+    color: rgba(0, 22, 77);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -53,7 +54,7 @@
 }
 .form .item label{
     font-size: 1rem;
-    color: #222222;
+    color: #443a3a;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     margin: 40px 27px;
@@ -67,11 +68,19 @@
     /* margin: 20px auto; */
 
 }
-.form .item.submit input{
-   
+
+.form .item.submit .sub{
+   background-color: #960606;
     width: 20%;
-    /* margin: 20px auto; */
+    height: 63%;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px 5px;
 }
+.form .item.submit .sub.reset{
+    background-color:green;
+}
+
 .block .form hr{
 color: red;
 margin: -10px 120px;
@@ -99,6 +108,7 @@ margin: -10px 120px;
     /* margin: 0px auto; */
     border: 3px solid rgba(0, 22, 77, 0.632);
 }
+
 .tableau .thead th  {
     background-color: rgb(3, 47, 94);
      color: #fff;
@@ -115,13 +125,16 @@ tr, td, th {
 tr:nth-child(even){
     background-color: #f2f1f1;
 }
-tr .action-submit.btn-edit{
-    background-color: rgb(2, 112, 59);
-    color: #ccc;
-    
+
+td .action-submit{
+    background-color: #960606;
+    height: 25px;
+    width: 35px;
 }
-tr .action-submit{
-    background-color: rgb(169, 2, 2);
+td .action-submit i{
     color: #fff;
 }
+td .action-submit.btn-edit{
+    background-color: green;
 
+}

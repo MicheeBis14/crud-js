@@ -1,13 +1,19 @@
-let form = document.getElementById('form');
-let btnAdd = document.getElementById('btn-submit');
+let form = document.getElementById('formDatas');
+let btnAdd = document.getElementById('btnAdd');
 let listview = document.querySelector('.tableau');
+let btnReset = doculent.getElementById('btnReset');
 
-// Data
+// Datas
 let phones = [];
 
 btnAdd.addEventListener('click', (e) => {
     btnAdd.classList.toggle('d-none');
-    form.classList.toggle('d-none');
+    formDatas.classList.toggle('d-none');
+});
+
+btnReset.addEventListener('click',(e) => {
+    btnReset.classList.toggle('d-none');
+    formDatas.classList.toggle('d-none');
 });
 
 // add Action
@@ -17,10 +23,10 @@ form.addEventListener('submit', (e) => {
     let data = new FormData(e.target);
 
     let phone = {
-        'nameTxt': data.get('nameTxt'),
-        'firstNom': data.get('firstNom'),
-        'phoneTxt': data.get('phoneTxt'),
-        'emailTxt': data.get('emailTxt'),
+        'nameUse': data.get('nameUse'),
+        'prenomUse': data.get('prenomUse'),
+        'emailUse': data.get('emailUse'),
+        'phoneUse': data.get('phoneUse'),
     }
 
     phones.push(phone);
@@ -34,10 +40,10 @@ function renderListView(){
         let temp = `
                     <tbody>
                         <tr>
-                            <td>${phone.nameTxt}</td>
-                            <td>${phone.phoneTxt}</td>
-                            <td>${phone.phoneTxt}</td>
-                            <td>${phone.emailTxt}</td>
+                            <td>${phone.nameUse}</td>
+                            <td>${phone.prenomUse}</td>
+                            <td>${phone.emailUse}</td>
+                            <td>${phone.phoneUse}</td>
                             <td>
                                 <button class="action-submit">
                                     <i class="bi bi-pencil"></i>
